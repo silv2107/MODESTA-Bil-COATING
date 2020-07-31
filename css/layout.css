@@ -333,12 +333,12 @@
 
 .eventPakkeTo h3{
     text-align: center;
-    color: gold;
+    color: rgb(255, 217, 0);
 }
 
 .valuta2{
     width: 90%;
-    color: gold;
+    color: rgb(255, 217, 0);
 }
 
 /* #endregion third section */
