@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Cabin Sketch', cursive;
+    /* overflow: hidden; */
+
+}
+
+/* header and nav */
+
+
+.header1{
+    height: 15vh;
+    background-color: #0D0D0D;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+.header1 img{
+    height: 80%;
+}
+
+.header1 svg{
+    fill: whitesmoke;
+    transform: rotateZ(89.8deg);
+    cursor: pointer;
+    /* border: solid red 1px; */
+    margin-top: 2%;
+    margin-right: 2%;
+    width: 70px;
+    height: 70px;
+}
+
+.header1 svg:hover{
+    /* background-color:#04B2D9; */
+    transition: 0.4s ease-in;
+}
+
+.nav1{
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    /* font-family:'Cabin Sketch', cursive; */
+    height: 50vh;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-top: 12vh;
+    padding-right: 15px;
+}
+
+.visible{
+    display: flex;
+    
+}
+
+.nav1 a{
+    margin: 2vh;
+    text-decoration: none;
+    color: #04B2D9;
+}
+
+.nav2{
+    display: none;
+}
+/* header and nav ends */
+
+.main{
+    /* padding-top: 15vh; */
+    height: 100vh;
+    /* font-family: 'Syncopate', sans-serif; */
+}
+.main img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* start OM MODESTA */
+
+
+.header2{
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 3vh;
+    /* margin-bottom: 2vh; */
+    transform: rotateZ(-3deg);
+}
+
+.carSvg{
+    width: 20%;
+    /* margin: 0 auto; */
+    fill: #04B2D9;
+    animation: moveCar 6s ease-out infinite;
+}
+
+@keyframes moveCar{
+    100% {transform: translateX(370px);}
+}
+
+.omModesta{
+    /* background-color: black; */
+    text-align: center;
+    color: black;
+}
+
+.omModesta p{
+    background-color: #D9AF8B;
+    margin: 0 auto;
+    width: 95%;
+    padding: 2vh 0px;
+}
+
+.omModesta div{
+    background-color: #D9AF8B;
+    margin: 0 auto;
+    height: 2px;
+    width: 20%;
+    border-bottom: 1px solid #04B2D9;
+}
+
+/* start GALLERI */
+
+.titleGalleri{
+    width: 300px;
+    margin: 0 auto;
+    /* padding-bottom: 3vh; */
+
+}
+
+.titleGalleri h1{
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 3vh;
+    line-height: 50%;
+}
+
+.titleGalleri h2{
+    margin-left: 65%;
+    /* background-color: rgba(0, 0, 0, 0.558); */
+    color: black;
+    display: inline-block;
+    transform: rotateZ(-20deg);
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.carSvg2{
+    width: 20%;
+    /* margin: 0 auto; */
+    fill:#a84f52;
+    animation: moveCar 6s ease-out infinite;
+}
+
+/* start GALLERY */
+.gallery{
+    width: 95%;
+    padding-bottom: 2vh;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template: repeat(2, 50%) / repeat(2, 50%); */
+    grid-template: auto / repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 10px;
+}
+
+.gallery img{
+    /* height: 100%; */
+    width: 100%;
+    border: 5px #04b2d934 solid;
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    object-fit: cover;
+}
+
+.gallery img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.lightBox-wrapper {
+    background-color: rgba(0, 0, 0, 0.993);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    display: none;
+    
+}
+
+.toSee{
+    display: block;
+}
+
+#lightBoxImg{
+    height: 100%;
+}
+
+/* #endregion lightbox */
+/* lightbox classes */
+
+/* start Prispakker */
+/* #region third section */
+
+.wrapper3{
+    background-image: url('../img/blabaggrund.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.textAreaTwo{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+}
+.textAreaTwo p{
+    width: 75%;
+}
+
+/* first offer pakage */
+.eventPakkeEt{
+    /* text-align: center; */
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-size: large;
+    background-color:#3b4c5c3d;
+    border: 2px #3b4c5c3d solid;
+    border-radius:10%;
+    background-color: rgba(173, 216, 230, 0.313);
+    margin-bottom: 5vh;
+}
+
+.eventPakkeEt h3{
+    text-align: center;
+}
+
+.eventPakkeEt p{
+    font-size: large;
+}
+
+.eventPakkeTo p{
+    font-size: large;
+}
+
+
+.valuta{
+    width: 85%;
+    margin: 0 auto;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.429);
+    border-top: 3px solid rgba(255, 255, 255, 0.429);
+    padding: 3vh;
+
+}
+
+.list{
+    font-size: 0.7rem;
+    padding-left: 26px;
+}
+
+.listP{
+    font-size: 0.7rem;
+    padding-left: 20px;
+
+
+}
+
+.thirdButton{
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px white solid;
+    color: white;
+}
+
+/* second pakage */
+
+.eventPakkeTo{
+    /* text-align: center; */
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-size: large;
+    background-color:#3b4c5c3d;
+    border: 2px #3b4c5c3d solid;
+    border-radius:10%;
+    background-color: rgba(173, 216, 230, 0.313);
+    margin-bottom: 8vh;
+}
+
+.fourthButton{
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px white solid;
+    color: white;
+}
+
+.eventPakkeTo h3{
+    text-align: center;
+    color: gold;
+}
+
+.valuta2{
+    width: 90%;
+    color: gold;
+}
+
+/* #endregion third section */
+
+/* fourth section kontakt info */
+/* #region third section */
+
+.wrapper4{
+    background-color: black;
+}
+
+.thirdHeader{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+.thirdHeader h2{
+    padding-top: 5vh;
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+
+.personalInfo{
+    padding-top: 5vh;
+}
+
+.theInfo{
+    margin: auto;
+    width: 90%;
+    display: flex;
+}
+
+.textInfo{
+    color: white;
+    padding-left: 20%;
+    padding-bottom: 5vh;
+    width: 100%;
+    /* display: flex; */
+}
+
+.textInfo p{
+    padding-top: 7px;
+    width: 100%;
+}
+
+p span{
+    font-family: sans-serif;
+}
+
+.theInfo svg{
+    fill: green;
+    height: 50px;
+    width: 50px;
+}
+
+/* start FOOTER */
+
+footer{
+    padding-top: 20px ;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+footer svg{
+    fill: white;
+    height: 15px;
+    width: 10px;
+}
+
+footer h5{
+    display: inline-block;
+}
+
+
+
+
+
