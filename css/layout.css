@@ -156,6 +156,11 @@
     transform: rotateZ(-20deg);
     border-radius: 10px;
     font-size: 2rem;
+    animation: moveGalleri 2s ease infinite alternate;
+}
+
+@keyframes moveGalleri{
+    100%{transform: rotateZ(-48deg);}
 }
 
 .carSvg2{
