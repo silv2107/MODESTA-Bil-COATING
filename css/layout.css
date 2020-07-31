@@ -166,7 +166,7 @@
 .carSvg2{
     width: 20%;
     /* margin: 0 auto; */
-    fill:#a84f52;
+    fill:#04B2D9;
     animation: moveCar 6s ease-out 3s infinite;
 }
 
